@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.svhuerta.tablademultiplicar.PrimaryController">
+   <children>
+      <Label layoutX="30.0" layoutY="30.0" text="Tabla del:" />
+      <TextField fx:id="txtTabla" layoutX="100.0" layoutY="26.0" prefWidth="80.0" />
+      
+      <Button fx:id="btnCalcular" layoutX="200.0" layoutY="26.0" onAction="#handleCalcular" text="Calcular" />
+      <Button fx:id="btnLimpiar" layoutX="280.0" layoutY="26.0" onAction="#handleLimpiar" text="Limpiar" />
+
+      <ListView fx:id="listTabla" layoutX="30.0" layoutY="80.0" prefHeight="280.0" prefWidth="320.0" />
+   </children>
+</AnchorPane>
