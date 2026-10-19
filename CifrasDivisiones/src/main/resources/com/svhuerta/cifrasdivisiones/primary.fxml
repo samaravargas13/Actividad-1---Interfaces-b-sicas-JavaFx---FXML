@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.svhuerta.cifrasdivisiones.PrimaryController">
+
+    <Label text="Cifras y Divisores de un Número"/>
+
+    <HBox spacing="10">
+        <Label text="Ingrese un número"/>
+        <TextField fx:id="txtNumero"/>
+        <Button text="Analizar" onAction="#analizar"/>
+        <Button text="Limpiar" onAction="#limpiar"/>
+    </HBox>
+
+    <GridPane hgap="10" vgap="10">
+
+        <Label text="Cantidad de cifras" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtCifras" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="Suma cifras impares" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtImpares" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Label text="Suma cifras pares" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtPares" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <Label text="Suma total" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtTotal" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+        <Label text="Cifra mayor" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtMayor" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+        <Label text="Cifra menor" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtMenor" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+    </GridPane>
+
+    <Label text="Divisores"/>
+
+    <TextArea fx:id="txtDivisores"/>
+
+</VBox>
